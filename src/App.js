@@ -33,6 +33,7 @@ function App() {
             <Navigation/>
 
             <Routes>
+                <Route index element={ <Products/> }></Route>
                 <Route path="products" element={ <Products/> }></Route>
                 <Route path="products/:productId" element={ <Product/> }></Route>
                 <Route path="*" element={ <NoMatch/> }/>
